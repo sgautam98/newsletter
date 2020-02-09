@@ -35,7 +35,7 @@ var jsonData= JSON.stringify(data);
   headers:{
           "Authorization":"sushant 131617cafa920388cdf88920487a6c3b-us4"
           },
-  body:jsonData
+   body:jsonData
   }
   request(options,function(error ,response, body){
     if(error){
@@ -57,7 +57,7 @@ app.post("/failure",function(req, res){
   res.redirect("/");
 });
 
-app.listen(process.env.PORT|| 3000, function(){
+app.listen( 3000, function(){
   console.log("Server is running on port no. 3000");
 });
 
